@@ -1,0 +1,29 @@
+.bento{
+    padding-bottom: 10rem;
+    display: grid;
+    gap: 4px;
+    height: 650px;
+    grid-auto-rows: 75px;
+    justify-items: stretch;
+    align-content: stretch;
+    grid-template-areas: 
+    "pro1 pro2 pro6 pro6  pro6  pro7  pro7  pro8   pro8   pro8 "
+    "pro1 pro3 pro6 pro6  pro6  pro7  pro7  pro12  pro12  pro12 "
+    "pro4 pro4 pro4 pro9  pro9  pro9  pro9  pro9   pro13  pro14  "
+    "pro5 pro5 pro5 pro9  pro9  pro9  pro9  pro9   pro15  pro16 "
+    "pro5 pro5 pro5 pro10 pro10 pro11 pro11 pro17  pro17  pro17 "
+    "pro5 pro5 pro5 pro10 pro10 pro11 pro11 pro17  pro17  pro17 "    
+}
+
+.bento__item{
+    min-width: 100px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(96 139 168); 
+    
+    text-align: center;
+    font-weight: bold;
+    
+}

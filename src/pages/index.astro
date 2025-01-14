@@ -1,6 +1,35 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../sections/Header.astro';
+import Introduction from '../sections/Introduction.astro';
+import Technologies from '../sections/Technologies.astro';
+import Projects from '../sections/Projects.astro';
+import Experience from '../sections/Experience.astro';
+import Contact from '../sections/Contact.astro';
+import Footer from '../sections/Footer.astro';
 ---
 
-<Layout>
+<Layout title="Portolio">
+    <Header/>
+	<main>
+		<div class="container">
+            <!-- <Introduction/> -->
+			<Experience/>
+			<!-- <TODO Technologies/> -->
+			<!-- <Projects/> -->
+			<!-- <Contact/> -->
+		</div>
+	</main>
+	<Footer/>
 </Layout>
+
+<style>
+    .container { 
+        max-width: 72rem; 
+        padding-right: 2.5rem; 
+        padding-left: 2.5rem; 
+        /* padding-top: 10rem; */
+        margin-left: auto;
+        margin-right: auto  
+    }
+  </style>
