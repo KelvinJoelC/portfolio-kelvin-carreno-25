@@ -12,23 +12,21 @@ import Footer from '../sections/Footer.astro';
 <Layout title="Portolio">
     <Header/>
 	<main>
-		<div class="container">
-            <!-- <Introduction/> -->
+		<div class="container-main">
+            <Introduction/>
 			<Experience/>
 			<!-- <TODO Technologies/> -->
 			<!-- <Projects/> -->
 			<!-- <Contact/> -->
 		</div>
+        <Footer/>
 	</main>
-	<Footer/>
 </Layout>
 
 <style>
-    .container { 
-        max-width: 72rem; 
+    .container-main { 
         padding-right: 2.5rem; 
         padding-left: 2.5rem; 
-        /* padding-top: 10rem; */
         margin-left: auto;
         margin-right: auto  
     }

@@ -1,0 +1,129 @@
+<section>
+    <header>
+      <div class="container-header">
+        <!-- Cambiar logo -->
+        <div class="logo-container">
+          <div class="logo">
+            Kc
+          </div>
+          <span class="portfolio-title">Portfolio</span>
+        </div>
+        <nav class="nav">
+          <a href="#Introduction" class="nav-link">Introduction</a>
+          <a href="#Experience" class="nav-link">Experience</a>
+          <a href="#Technologies" class="nav-link">Technologies</a>
+          <a href="#Projects" class="nav-link">Projects</a>
+        </nav>
+        <a href="#contact" class="contact-button">Contact</a>
+        <button class="mobile-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+    </header>
+  </section>
+
+<style>
+  header {
+    /* background-color: white; */
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+  }
+
+  .container-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .logo {
+    background-color: purple;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+  }
+
+  .portfolio-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1a202c; 
+  }
+
+  .nav {
+    display: none;
+    gap: 1.5rem;
+    color: #4a5568;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+
+    &:hover {
+    color: #6b46c1; 
+    }
+  }
+
+  .contact-button {
+    background: linear-gradient(to bottom right, #38a169, #3182ce);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    text-decoration: none;
+    display: none;
+
+    &:hover {
+      background: linear-gradient(to bottom left, #38a169, #3182ce);
+    }
+  } 
+
+  /* Mobile Menu */
+  .mobile-menu {
+    display: block;
+    background: none;
+    border: none;
+    color: #4a5568;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+    color: #1a202c;
+    }
+  }
+
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .nav {
+      display: flex;
+    }
+    .contact-button {
+      display: initial;
+    }
+
+    .mobile-menu {
+      display: none;
+    }
+  }
+</style>
+  
